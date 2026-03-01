@@ -1,9 +1,22 @@
+.page-container{
+    max-width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+body {
+    font-family: sans-serif;
+    background-color: #f9f3e9;
+}
 .page-container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f9f3e9; /* 主背景色：浅米白 */
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f3e9;
+    overflow: hidden;
 }
 .aqua-shape-round {
     width: 200px;
@@ -86,6 +99,8 @@
     color:black;
     margin-bottom:24px;
     z-index: 10;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 .box {
     position:relative;
@@ -97,4 +112,10 @@
     padding:8px 14px;
     font-size:14px;
     font-weight: 700;
+    flex-wrap: wrap;
+}
+@media (max-width:1350px){
+    .huge-title {
+        width:100%;
+    }
 }
